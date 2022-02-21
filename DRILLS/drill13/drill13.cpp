@@ -60,7 +60,7 @@ int main() {
             cat.move(100, 0);
             win.wait_for_button();
         }
-        cat.move(-700, 100);          // buggy
+        cat.move(-700, 100);
         win.wait_for_button();
     }
 
