@@ -1,4 +1,4 @@
-//To compile: g++ exercise.12.7.cpp ../../GUI/Graph.cpp ../../GUI/Window.cpp ../../GUI/GUI.cpp ../../GUI/Simple_window.cpp -o exrc7 `fltk-config --ldflags --use-images`
+//To compile: g++ drill12.cpp ../../GUI/Graph.cpp ../../GUI/Window.cpp ../../GUI/GUI.cpp ../../GUI/Simple_window.cpp -o drill12 `fltk-config --ldflags --use-images`
 
 #include "../../GUI/Window.h"
 #include "../../GUI/Graph.h"
