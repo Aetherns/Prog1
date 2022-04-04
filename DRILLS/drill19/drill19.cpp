@@ -5,7 +5,6 @@
 
 #include "../../GUI/std_lib_facilities.h"
 
-//my wonderful template
 template <typename T>
     struct S {
     private:
@@ -65,10 +64,7 @@ template<typename T> istream& operator>>(istream& is, vector<T>& v)
     char ch = 0;
     is >> ch;
     if (ch != '{') {
-        is.unget(); //maybe my caller can use that character
-        /*Moves the get pointer one character backwards, 
-        making the last character gotten by an input operation 
-        available once again for the next input operation.*/
+        is.unget(); 
         return is;
     }
 
@@ -123,15 +119,20 @@ int main() {
     S<double> sc(c);
     read_val(d);
     S<string> sd(d);
-
-
-    //now works
+    
     cout << "\nPrinting new input\n";
     cout << sa.get() <<endl;
     cout << sb.get() <<endl;
     cout << sc.get() <<endl;
     cout << sd.get() <<endl;
 
+    //14
+    cout << "\nReading vector elements from cin...\n";
+    cout << "Syntax: {val1, val2, val3, [valn]}\n";
+    vector<int> e;
+    read_val(e);
+    S<vector<int>> se {e};
+    cout << "S<vector<int>> cin read: " << se.get() << '\n';
 
 
 
