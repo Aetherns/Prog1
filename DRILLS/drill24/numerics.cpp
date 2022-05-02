@@ -45,7 +45,7 @@ try{
 	int value;
 	cin >> value;
 	while(value != 0){
-		if(valu e < 0){
+		if(value < 0){
 			cout << "Enter a positive number!" << endl;
 			cout << "Enter another integer (outputs the sqrt() of it), if input is null, then exit:\n";
 			cin >> value;
